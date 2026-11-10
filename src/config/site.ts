@@ -2,6 +2,7 @@ import { media } from "@/data/media";
 
 export const siteConfig = {
   name: "CafeId",
+  homeTitle: "CafeId | Kafe Sarapan, Kopi & Hidangan Penutup",
   description:
     "CafeId: kafe dengan sarapan, kopi, dan hidangan penutup segar, tersedia juga untuk acara dan makan pribadi.",
   language: "id",

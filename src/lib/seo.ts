@@ -27,9 +27,10 @@ export function pageMetadata({
   type = "website",
   publishedTime,
 }: PageMeta): Metadata {
-  const shownTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.name;
+  // Tanpa title (beranda) dipakai judul penuh, bukan "Nama | Nama" dari template layout.
+  const shownTitle = title ? `${title} | ${siteConfig.name}` : siteConfig.homeTitle;
   return {
-    title,
+    title: title ?? { absolute: siteConfig.homeTitle },
     description,
     alternates: { canonical: path },
     openGraph: {
