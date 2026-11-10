@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# example env stays tracked
+!.env.example
+
+# sumber foto mentah (diunduh lewat scripts/fetch-photos.mjs)
+/assets-src/
